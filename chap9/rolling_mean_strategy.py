@@ -1,2 +1,3 @@
 from zipline import run_algorithm
-from zipline.api import order_target_percent
+from zipline.api import order_target_percent, symbol, set_commission
+
