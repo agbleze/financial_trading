@@ -22,5 +22,8 @@ stmt = aapl.get_financial_stmts('quarterly', ['income', 'cash', 'balance'])
 print(stmt)
 
 
+#%% summary data retrieval
+
+print(aapl.get_summary_data())
 
 # %%
