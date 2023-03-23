@@ -29,3 +29,7 @@ print(aapl.get_summary_data())
 # %% Multiple-tickers retrieval
 
 currencies = yf(['EURCHF=X', 'USDEUR=X', 'GBPUSD=x'])
+
+#%%
+print(currencies.get_historical_price_data('2020-01-01', '2020-12-31', 'weekly'))
+# %%
