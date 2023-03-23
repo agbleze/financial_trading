@@ -26,4 +26,6 @@ print(stmt)
 
 print(aapl.get_summary_data())
 
-# %%
+# %% Multiple-tickers retrieval
+
+currencies = yf(['EURCHF=X', 'USDEUR=X', 'GBPUSD=x'])
