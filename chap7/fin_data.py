@@ -32,4 +32,25 @@ currencies = yf(['EURCHF=X', 'USDEUR=X', 'GBPUSD=x'])
 
 #%%
 print(currencies.get_historical_price_data('2020-01-01', '2020-12-31', 'weekly'))
+
+# %%  #####   Exploring the pandas_datareader  ################
+
+from pandas_datareader import data
+
+start_date = '2010-01-01'
+end_date = '2020-12-31'
+
+#%%
+
+aapl = data.DataReader('AAPL',# data_source= 'yahoo', 
+                       start_date, end_date
+                       )
+
+
+
+
+
+
+
+
 # %%
